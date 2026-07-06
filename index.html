@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio | Nama Kamu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">MyPorto<span>.</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Proyek</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">Halo, saya</p>
+      <h1 class="hero-name">Nama Kamu</h1>
+      <h2 class="hero-role">Frontend Developer &amp; UI Designer</h2>
+      <p class="hero-desc">
+        Saya suka membangun tampilan web yang bersih, cepat, dan mudah digunakan.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+        <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="hero-avatar">
+      <div class="avatar-circle">
+        <span>NK</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Saya adalah seorang developer muda yang passionate di bidang web development.
+            Dengan pengalaman membangun berbagai proyek, saya selalu berusaha menghasilkan
+            kode yang bersih dan solusi yang efisien.
+          </p>
+          <p>
+            Saat ini saya sedang mendalami React, Node.js, dan desain UI/UX. Saya percaya
+            bahwa teknologi yang baik harus terasa menyenangkan untuk digunakan.
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <span class="info-label">Nama</span>
+              <span class="info-value">Nama Kamu</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Email</span>
+              <span class="info-value">email@example.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Lokasi</span>
+              <span class="info-value">Jakarta, Indonesia</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Status</span>
+              <span class="info-value status-open">Tersedia untuk Hire</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card" data-aos>
+          <div class="skill-icon">🌐</div>
+          <h3>HTML &amp; CSS</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-level="90"></div>
+          </div>
+          <span class="skill-percent">90%</span>
+        </div>
+        <div class="skill-card" data-aos>
+          <div class="skill-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-level="80"></div>
+          </div>
+          <span class="skill-percent">80%</span>
+        </div>
+        <div class="skill-card" data-aos>
+          <div class="skill-icon">⚛️</div>
+          <h3>React</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-level="70"></div>
+          </div>
+          <span class="skill-percent">70%</span>
+        </div>
+        <div class="skill-card" data-aos>
+          <div class="skill-icon">🎨</div>
+          <h3>UI Design</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-level="75"></div>
+          </div>
+          <span class="skill-percent">75%</span>
+        </div>
+        <div class="skill-card" data-aos>
+          <div class="skill-icon">🖥️</div>
+          <h3>Node.js</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-level="60"></div>
+          </div>
+          <span class="skill-percent">60%</span>
+        </div>
+        <div class="skill-card" data-aos>
+          <div class="skill-icon">🗄️</div>
+          <h3>SQL / Database</h3>
+          <div class="skill-bar">
+            <div class="skill-fill" data-level="65"></div>
+          </div>
+          <span class="skill-percent">65%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Proyek Saya</h2>
+      <div class="projects-grid">
+
+        <div class="project-card" data-aos>
+          <div class="project-img" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <span>🛒</span>
+          </div>
+          <div class="project-body">
+            <h3>E-Commerce App</h3>
+            <p>Aplikasi belanja online dengan fitur keranjang, filter produk, dan checkout sederhana.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm">Demo</a>
+              <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos>
+          <div class="project-img" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+            <span>📝</span>
+          </div>
+          <div class="project-body">
+            <h3>Todo List App</h3>
+            <p>Aplikasi manajemen tugas dengan fitur tambah, hapus, dan filter berdasarkan status.</p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>CSS Modules</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm">Demo</a>
+              <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos>
+          <div class="project-img" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+            <span>🌤️</span>
+          </div>
+          <div class="project-body">
+            <h3>Weather Dashboard</h3>
+            <p>Dashboard cuaca real-time menggunakan OpenWeather API dengan tampilan yang clean.</p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>API</span>
+              <span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm">Demo</a>
+              <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Hubungi Saya</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p>Punya proyek menarik atau ingin berdiskusi? Jangan ragu untuk menghubungi saya!</p>
+          <div class="contact-links">
+            <a href="mailto:email@example.com" class="contact-link">
+              <span>📧</span> email@example.com
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span>💻</span> github.com/namakamu
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span>🔗</span> linkedin.com/in/namakamu
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Nama kamu" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Kirim Pesan</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Dibuat dengan ❤️ oleh <strong>Nama Kamu</strong> &copy; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
